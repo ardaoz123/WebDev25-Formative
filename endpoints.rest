@@ -1,0 +1,44 @@
+#Task 1 Defining Endpoints
+
+GET http://localhost:5005
+###
+
+GET http://localhost:5005/Task1/Param/2/True
+###
+
+POST http://localhost:5005/Task1
+Content-Type: application/json
+
+{
+    "ID": 1,
+    "Name":"Some Product",
+    "Value": 10.5
+}
+###
+
+
+#Task 2 Refactoring with In-Memory List Storage
+
+POST http://localhost:5005/Task2
+Content-Type: application/json
+
+{
+    "ID" : "6a5eb5d4-2263-4fcc-9f51-f6d56194860b",
+    "Name": "Some Name",
+    "Price": 10.50,
+    "Expiry": "1996-10-20"
+}
+###
+
+GET http://localhost:5005/Task2?ID=6a5eb5d4-2263-4fcc-9f51-f6d56194860b
+###
+
+GET http://localhost:5005/Task2/1
+###
+
+#Is this from filter and middleware?
+#Return 5 products per page (pagination) skip/take
+
+#Task 3 Refactoring for controller and services
+#Replace Task2 with Task3 and test all 3 end points
+#Task 4 Instead of storing in Json file store Product in PostgreSQL database.

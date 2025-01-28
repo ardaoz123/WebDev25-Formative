@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev25-Formative", "WebDev25-Formative.csproj", "{8FC53440-1ADC-6829-4D9A-8EFB10AF413A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FC53440-1ADC-6829-4D9A-8EFB10AF413A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC53440-1ADC-6829-4D9A-8EFB10AF413A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC53440-1ADC-6829-4D9A-8EFB10AF413A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC53440-1ADC-6829-4D9A-8EFB10AF413A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62B51DCA-516C-45EA-BCA6-65CC17BAADE5}
+	EndGlobalSection
+EndGlobal
