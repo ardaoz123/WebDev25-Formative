@@ -4,38 +4,32 @@ using Microsoft.AspNetCore.Mvc;
 [Route("")]
 public class TaskController : Controller 
 {
-    // public ICollection<TaskType> tasks = new List<TaskType>();
-    readonly ITaskFileStorage taskFileStorage;
+    readonly ITaskStorage TaskStorage;
 
-    public TaskController(ITaskFileStorage taskFileStorage)
+    public TaskController(ITaskStorage taskStorage)
     {
-        this.taskFileStorage = taskFileStorage;
+        TaskStorage = taskStorage;
     }
 
-    //Task 1
     [HttpGet("/Task1/Param/2/True")]
     public async Task<IActionResult> Test ()=> Ok("test");
 
-    [HttpPost("Task2")]
+    [HttpPost("/Task2")]
     public async Task<IActionResult> Add ([FromBody] TaskType task) 
     {
-        // try {
-            await taskFileStorage.Add(task);
-            return Ok();
-        // } catch {
-            // return BadRequest();
-        // }
+        await TaskStorage.Add(task);
+        return Ok();
     }
 
-    [HttpGet("Task2")]
+    [HttpGet("/Task2")]
     public async Task<IActionResult> Get([FromQuery] Guid ID)
     {
-        var task = await taskFileStorage.GetTask(ID);
+        var task = await TaskStorage.GetTask(ID);
         if(task is null) return NotFound();
         return Ok(task);
     }
 
     [HttpGet("Task2/1")]
     public async Task<IActionResult> GetTasks() =>
-        Ok((await taskFileStorage.GetAllTasks()).ToArray());
+        Ok((await TaskStorage.GetAllTasks()).ToArray());
 }

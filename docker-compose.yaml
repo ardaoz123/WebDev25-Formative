@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    command: -c shared_buffers=256MB -c max_connections=200
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+    #- pgdata:/var/lib/postgresql/data
+    - pgdata:/var/lib/postgresql/data
+    #- ./scripts:/scripts
+    logging:
+      driver: none
+
+volumes:
+  pgdata:

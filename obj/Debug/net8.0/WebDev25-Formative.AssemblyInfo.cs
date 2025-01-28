@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebDev25-Formative")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caf70cb2ea515618f729e824bce69d25836824a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebDev25-Formative")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebDev25-Formative")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
